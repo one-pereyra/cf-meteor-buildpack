@@ -17,7 +17,7 @@ status() {
   echo "-----> $*"
 }
 
-node_version=0.10.36
+node_version=0.10.40
 
 install_node() {
   if [ -f "$BUILD_DIR/.vendor/node/bin/node" ] ; then
