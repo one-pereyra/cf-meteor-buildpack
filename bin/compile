@@ -59,9 +59,9 @@ install_meteor() {
     # $METEOR_INSTALL_SCRIPT > install-meteor-verbose.sh
   # chmod +x install-meteor-verbose.sh
 
-  status "Execute ./install-meteor-verbose.sh"
-  chmod +x /tmp/buildpacks/cf-meteor-buildpack/bin/MY_METEOR_INSTALL
-  /tmp/buildpacks/cf-meteor-buildpack/bin/MY_METEOR_INSTALL
+  status "Execute ./install-meteor-verbose.sh from $BUILD_DIR/bin/"
+  chmod +x $BUILD_DIR/bin/MY_METEOR_INSTALL
+  $BUILD_DIR/bin/MY_METEOR_INSTALL
   status "Done"
 
   status "Updating PATH with Meteor"
