@@ -71,7 +71,7 @@ install_meteor() {
   status "Showme HOME : $HOME"
   status "Show me (dirname 0) : $(dirname $0)"
   status "Show me  0 : $0"
-  BUILDPACK_DIR=$0
+  BUILDPACK_DIR=$(dirname $0)
   chmod +x $BUILDPACK_DIR/MY_METEOR_INSTALL
   $BUILDPACK_DIR/MY_METEOR_INSTALL
   status "Done"
