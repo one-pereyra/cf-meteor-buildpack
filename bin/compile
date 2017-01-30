@@ -66,6 +66,8 @@ install_meteor() {
   status "Show me CACHE_DIR : $CACHE_DIR"
   status "Show me PWD : $pwd"
   status "Show me TMPDIR : $TMPDIR"
+  status "Show me PWD : $PWD"
+  status "Showme HOME : $HOME"
   chmod +x $TMPDIR/MY_METEOR_INSTALL
   $TMPDIR/MY_METEOR_INSTALL
   status "Done"
