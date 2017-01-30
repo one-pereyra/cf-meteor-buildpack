@@ -65,8 +65,9 @@ install_meteor() {
   status "Show me INSTALL_TMPDIR : $INSTALL_TMPDIR"
   status "Show me CACHE_DIR : $CACHE_DIR"
   status "Show me PWD : $pwd"
-  chmod +x MY_METEOR_INSTALL
-  ./MY_METEOR_INSTALL
+  status "Show me TMPDIR : $TMPDIR"
+  chmod +x $TMPDIR/MY_METEOR_INSTALL
+  $TMPDIR/MY_METEOR_INSTALL
   status "Done"
 
   status "Updating PATH with Meteor"
