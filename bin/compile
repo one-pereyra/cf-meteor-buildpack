@@ -60,8 +60,13 @@ install_meteor() {
   # chmod +x install-meteor-verbose.sh
 
   status "Execute ./install-meteor-verbose.sh from $BUILD_DIR/bin/"
-  chmod +x $BUILD_DIR/bin/MY_METEOR_INSTALL
-  $BUILD_DIR/bin/MY_METEOR_INSTALL
+  status "Show me BUILD_DIR : $BUILD_DIR"
+  status "Show me TARBALL_URL : $TARBALL_URL"
+  status "Show me INSTALL_TMPDIR : $INSTALL_TMPDIR"
+  status "Show me CACHE_DIR : $CACHE_DIR"
+  status "Show me PWD : $pwd"
+  chmod +x MY_METEOR_INSTALL
+  ./MY_METEOR_INSTALL
   status "Done"
 
   status "Updating PATH with Meteor"
