@@ -59,19 +59,11 @@ install_meteor() {
     # $METEOR_INSTALL_SCRIPT > install-meteor-verbose.sh
   # chmod +x install-meteor-verbose.sh
 
-  status "Execute ./install-meteor-verbose.sh from $BUILD_DIR/bin/"
-  status "Show me BUILD_DIR : $BUILD_DIR"
-  status "Show me TARBALL_URL : $TARBALL_URL"
-  status "Show me INSTALL_TMPDIR : $INSTALL_TMPDIR"
-  status "Show me tarball_url : $tarball_url"
-  status "Show me install_tmpdir : $install_tmpdir"
-  status "Show me CACHE_DIR : $CACHE_DIR"
-  status "Show me tmpdir : $tmpdir"
-  status "Show me PWD : $PWD"
-  status "Showme HOME : $HOME"
+  status "Execute ./install-meteor-verbose.sh"
   status "Show me (dirname 0) : $(dirname $0)"
   status "Show me  0 : $0"
   BUILDPACK_DIR=$(dirname $0)
+  status "Show me BUILDPACK_DIR : $BUILDPACK_DIR"
   chmod +x $BUILDPACK_DIR/MY_METEOR_INSTALL
   $BUILDPACK_DIR/MY_METEOR_INSTALL
   status "Done"
